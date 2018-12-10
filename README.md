@@ -24,6 +24,8 @@ You'll first need to load the module and pass some configuration to the library.
 
     import authentication from 'react-azure-adb2c';
     authentication.initialize({
+        // optional, will default to false. Validate or not authority (if set to true enables b2clogin.com uris)
+        validateAuthority: false,
         // optional, will default to this
         instance: 'https://login.microsoftonline.com/tfp/', 
         // your B2C tenant
